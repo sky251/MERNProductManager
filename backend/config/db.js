@@ -3,12 +3,11 @@ import dotenv from 'dotenv'
 
 
 dotenv.config()
-// console.log(process.env.mongoURI); you could not be able to see untill you import dotenv and use dotenv.config()
+// console.log(process.env.mongoURI); you could not be able to see untill you import dotenv and use dotenv.config() method
 
 export const connectDB = async ()=>{
     
     try {
-        
         const conn = await mongoose.connect(process.env.MONGO_URI)
         console.log(`MongoDB Connected : ${conn.connection.host}`);
         

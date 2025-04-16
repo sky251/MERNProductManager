@@ -5,7 +5,7 @@ const productSchema = new mongoose.Schema({
     price: { type: Number, required: true },
     image: { type: String, required: true },
 }, {
-    timestamps: true // createdAt, updatedAt
+    timestamps: true // createdAt, updatedAt time in DB
 })
 
 export const Product = mongoose.model('Product',productSchema)
