@@ -9,7 +9,6 @@ export const getData = async (req, res) => {
     } catch (error) {
         console.log("error in fetching products:", error.message);
         res.status(500).json({ success: false, message: "Server Error" })
-
     }
 }
 
